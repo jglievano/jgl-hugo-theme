@@ -1,21 +1,15 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
-name = "Jgl"
+name = "jgl"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
-description = ""
+description = "My personal branded blog theme"
 homepage = "http://example.com/"
-tags = []
+tags = ["blog", "personal", "brand"]
 features = []
 min_version = "0.25.1"
 
 [author]
-  name = ""
-  homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "Gabriel Lievano"
+  homepage = "http://jglievano.com"

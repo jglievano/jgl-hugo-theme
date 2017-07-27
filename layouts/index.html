@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+  <head>
+    {{ partial "header.html" . }}
+  </head>
+  <body>
+    {{- range first 10 .Data.Pages }}
+    <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+    {{- end }}
+  </body>
+</html>
