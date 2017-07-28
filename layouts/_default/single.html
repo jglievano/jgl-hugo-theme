@@ -4,6 +4,7 @@
     {{ partial "header.html" . }}
   </head>
   <body>
+    {{ partial "logo.html" . }}
     <h1>{{ .Title }}</h1>
     <h6>{{ .Date.Format "Mon, Jan2, 2006" }}</h6>
     {{ .Content }}
