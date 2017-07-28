@@ -4,10 +4,22 @@
     {{ partial "header.html" . }}
   </head>
   <body>
-    {{ partial "logo.html" . }}
-    <h1>{{ .Title }}</h1>
-    <h6>{{ .Date.Format "Mon, Jan2, 2006" }}</h6>
-    {{ .Content }}
-    <h4><a href="{{ .Site.BaseURL }}">Home</a></h4>
+    <div class="container">
+      {{ partial "logo.html" . }}
+      <article class="article">
+        <header>
+          <h1>{{ .Title }}</h1>
+          <h2>Written on
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">
+              {{ .Date.Format "Monday, Jan 02, 2006" }}
+            </time>
+          </h2>
+        </header>
+        <div class="content">
+        {{ .Content }}
+        </div>
+        <h4><a href="{{ .Site.BaseURL }}">Back</a></h4>
+      </article>
+    </div>
   </body>
 </html>
