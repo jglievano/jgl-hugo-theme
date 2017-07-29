@@ -10,6 +10,11 @@ body {
   padding: 2em;
 }
 
+nav {
+  padding-top: 3px;
+  border-bottom: 1px solid black;
+}
+
 article {
   font-size: 130%;
 }
