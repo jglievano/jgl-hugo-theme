@@ -408,6 +408,9 @@ textarea {
   color: #37474F;
   word-wrap: break-word; }
 
+a {
+  text-decoration: none; }
+
 /*******************
   3. Layout
 ********************/
@@ -428,7 +431,7 @@ textarea {
 
 .header-container {
   padding: 0 1.5em;
-  margin-top: 2em; }
+  margin: 0; }
 
 .entry-info,
 .site-info {
@@ -472,18 +475,23 @@ textarea {
 /*******************
   4. Navigation
 ********************/
+#navmenu {
+  width: 100%;
+  border-bottom: 1px solid #999;
+  background-color: #fafafa; }
+
 .main-menu {
   display: flex;
   flex-flow: row wrap;
+  width: 600px;
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0 auto; }
   .main-menu li {
-    font-size: 1em;
-    text-transform: uppercase;
-    margin-right: .666666em; }
-    .main-menu li:last-of-type {
-      margin-right: 0; }
+    padding-top: 0.2em;
+    font-size: 0.8em;
+    text-transform: lowercase;
+    margin: 0 auto; }
   .main-menu a.current {
     font-weight: 700;
     border: inherit;

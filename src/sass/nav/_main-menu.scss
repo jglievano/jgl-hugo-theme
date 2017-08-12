@@ -1,19 +1,23 @@
+#navmenu {
+  width: 100%;
+  border-bottom: 1px solid #999;
+  background-color: #fafafa;
+}
+
 .main-menu {
   display: flex;
   flex-flow: row wrap;
 
+  width: $max-width;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 
   li {
-    font-size: 1em;
-    text-transform: uppercase;
-    margin-right: .666666em;
-
-    &:last-of-type {
-      margin-right: 0;
-    }
+    padding-top: 0.2em;
+    font-size: 0.8em;
+    text-transform: lowercase;
+    margin: 0 auto;
   }
 
   a {
