@@ -1,0 +1,11 @@
+body,
+button,
+input,
+select,
+textarea {
+  font-size: $font-size--base;
+  line-height: $line-height--body;
+  color: $color--text-main;
+  word-wrap: break-word;
+}
+

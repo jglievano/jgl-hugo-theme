@@ -1,25 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    {{ partial "header.html" . }}
-  </head>
-  <body>
-    {{ partial "nav.html" . }}
-    <div class="container">
-      <article class="article">
-        <header>
-          <h1>{{ .Title }}</h1>
-          <h2>Written on
-            <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">
-              {{ .Date.Format "Monday, Jan 02, 2006" }}
-            </time>
-          </h2>
-        </header>
-        <div class="content">
-        {{ .Content }}
-        </div>
-        <h4><a href="{{ .Site.BaseURL }}">Back</a></h4>
-      </article>
-    </div>
-  </body>
-</html>
+{{ partial "header.html" . }}
+
+<main class='main'>
+  <article lang='{{ .Params.Lang | default .Lang }}' class='entry'>
+    {{ partial "entry/header" . }}
+    {{ partial "entry/content" . }}
+    {{ partial "entry/footer" . }}
+  </article>
+
+  {{ partial "nav/entry_nav" . }}
+
+  {{ if not ( eq .Params.comments false ) }}
+    {{ partial "disqus" . }}
+  {{ end }}
+</main>
+
+{{ partial "footer.html" . }}
+

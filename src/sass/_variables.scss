@@ -1,0 +1,39 @@
+$max-width: 600px;
+
+// Colors
+$color--accent: #FFCD00;
+$color--black: #212121;
+$color--grey: #BDBDBD;
+$color--white: #FAFAFA;
+
+$color--background-hr: $color--grey;
+
+$color--text-main: #37474F;
+$color--text-heading: #263238;
+$color--link: $color--black;
+$color--link-visited: $color--black;
+$color--link-faded: #455A64;
+$color--link-hover: $color--text-main;
+
+$color--border-table: $color--grey;
+
+$dark: #1A1A1A;
+$text: #263238;
+$normal: #2A2A2A;
+$light: #FAFAFA;
+
+// Typography
+$font-family: "Source Sans Pro", sans-serif;
+$font-family--code: "Source Code Pro", monospace;
+
+$font-size--base: 18px;
+
+$line-height--body: 1.5;
+$line-height--heading: 1.2;
+
+$font-size--h1: 1.666666667;
+$font-size--h2: 1.555555556;
+$font-size--h3: 1.444444444;
+$font-size--h4: 1.333333333;
+$font-size--h5: 1.222222223;
+$font-size--h6: 1.111111112;

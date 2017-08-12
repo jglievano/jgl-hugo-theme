@@ -1,4 +1,7 @@
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/*******************
+  0. Normalize
+********************/
+/* honormalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -388,3 +391,17 @@ template {
  */
 [hidden] {
   display: none; }
+
+/*******************
+  1. Layout
+********************/
+.icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em; }
+
+.icon {
+  stroke: currentColor;
+  fill: none;
+  position: relative;
+  top: .111111111111em; }

@@ -3,9 +3,9 @@
 
 name = "jgl"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
+licenselink = "https://github.com/jglievano/jgl-hugo-theme/blob/master/LICENSE.md"
 description = "My personal branded blog theme"
-homepage = "http://example.com/"
+homepage = "http://jglievano.com/"
 tags = ["blog", "personal", "brand"]
 features = []
 min_version = "0.25.1"

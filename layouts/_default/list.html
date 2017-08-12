@@ -1,15 +1,21 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    {{ partial "header.html" . }}
-  </head>
-  <body>
-    {{ partial "nav.html" . }}
-    <div class="container">
-      {{- range first 10 .Data.Pages }}
-      <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-      {{- end }}
-      <h4><a href="{{ .Site.BaseURL }}">Home</a></h4>
+{{ partial "header" . }}
+
+<main class='main'>
+  <section class='list-container'>
+    <h1 class='list-title title'>
+      {{- if .Data.Singular -}}
+        <span class='taxonomy-type'>{{ .Data.Singular | title }}: </span>
+      {{- end -}}
+      {{- .Title -}}
+    </h1>
+    <div class='list'>
+      {{ range .Paginator.Pages }}
+        {{ .Render "li" }}
+      {{ end }}
     </div>
-  </body>
-</html>
+
+    {{ partial "nav/pagination" . }}
+  </section>
+</main>
+
+{{ partial "footer" . }}
