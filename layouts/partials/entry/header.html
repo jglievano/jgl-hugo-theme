@@ -1,13 +1,29 @@
 <header class='entry-header'>
   <div class='entry-info'>
+    {{ if not ( eq .Section "page" ) }}
+    <span class='posted-on'>
+      <time class='date' datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
+        {{- .Date.Format ( or .Site.Params.dateFormat "January 02, 2006" ) -}}
+      </time>
+    </span>
+    {{ end }}
     <h1 class='entry-title title'>
       {{- .Title -}}
     </h1>
+    {{ if not ( eq .Section "page" ) }}
+      {{ with .Site.Author.name }}
+      <span class='byline'>
+        <span class='byword'><i> {{ i18n "by" }} </i></span>
+        <span class='byauthor'>{{ . }}</span>
+      </span>
+      {{ end }}
+    {{ end }}
+
     {{ with .Description }}
     <p class='entry-subtitle'>
       {{ . }}
     </p>
     {{ end }}
   </div>
-  {{ partial "entry/meta" . }}
+  <hr>
 </header>

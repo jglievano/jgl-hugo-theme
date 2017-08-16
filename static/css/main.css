@@ -435,7 +435,7 @@ a {
 
 .entry-info,
 .site-info {
-  margin-top: 1.5em; }
+  margin-top: 3.5em; }
 
 .page .site-header:after {
   display: none; }
@@ -497,3 +497,20 @@ a {
     font-weight: 700;
     border: inherit;
     opacity: 1; }
+
+.entry-info {
+  text-align: center;
+  letter-spacing: 0.5em;
+  padding-bottom: 1em; }
+  .entry-info .posted-on {
+    font-size: 0.8em;
+    text-align: center;
+    text-transform: uppercase; }
+  .entry-info h1 {
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 0.2em; }
+  .entry-info .byline .byword {
+    padding-right: 0.2em; }
+  .entry-info .byline .byauthor {
+    text-transform: uppercase; }
